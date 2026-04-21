@@ -430,6 +430,30 @@ img {
   justify-content: center;
 }
 
+/* Wrapper */
+.about__img-wrapper {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+/* Image */
+.about__img {
+  width: 100%;
+  height: auto;
+  display: block;
+
+  filter: grayscale(100%);
+  transition: all 0.5s ease;
+}
+
+/* Hover effect */
+.about__img-wrapper:hover .about__img {
+  filter: grayscale(0%);
+  transform: scale(1.01);
+}
+
 /*===================== SKILLS =========================*/
 
 .skills__container {
